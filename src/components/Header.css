@@ -1,0 +1,26 @@
+/* header */
+#header {position: fixed; top: 50px; left: 50px; z-index: 100;}
+#header .title {position: fixed; top: 50px; right: 50px; z-index: 100; font-weight: 700; font-size: 20px; color: #000; transition: all .5s; transition-timing-function: cubic-bezier(0.545, 0.060, 0.875, 0.530);}
+#header .trg {display: block; position: relative; box-shadow: 10px 17px 35px 0px rgba(156, 138, 138, 0.2); border: none; padding: 30px; background: #ffffff; cursor: pointer; transition: all .5s; transition-timing-function: cubic-bezier(0.545, 0.060, 0.875, 0.530);}
+#header .trg:after {display: block; content: ''; position: absolute; top: 0; right: 0; bottom: 0; left: 0; z-index: -1; width: 100%; height: 100%; border-radius: 50%; background: #000; transition: all .5s; transition-timing-function: cubic-bezier(0.545, 0.060, 0.875, 0.530); opacity: 0;}
+#header .trg span {display: block; width: 40px; height: 4px; margin: 10px 0 0; background: #000; transition: all .5s; transition-timing-function: cubic-bezier(0.545, 0.060, 0.875, 0.530);}
+#header .trg span:first-child {margin: 0;}
+
+#gnb {position: fixed; top: 50%; left: 50%; z-index: 200; opacity: 0; visibility: hidden; transform: translate(-50%, 0); transition: all .5s .2s;}
+#gnb li {margin: 20px 0 0;}
+#gnb li:first-child {margin: 0;}
+#gnb li a {display: inline-block; position: relative; font-weight: 700; font-size: 30px; color: #ffffff; text-align: center; transition: all .2s; transition-timing-function: cubic-bezier(0.545, 0.060, 0.875, 0.530);}
+#gnb li a:after {display: block; content: ''; position: absolute; top: 20px; right: -80px; z-index: -1; width: 110%; height: 20px; background: #ca2dfd; opacity: 0; transition: all .2s; transition-timing-function: cubic-bezier(0.545, 0.060, 0.875, 0.530);}
+#gnb li a:hover {color: #f6ff00;}
+#gnb li a:hover:after {right: -30px; opacity: 1;}
+
+/* header on */
+#header.on .title {color: #ffffff;}
+#header.on .trg {transform: rotate(90deg); box-shadow: none; background: none;}
+#header.on .trg span {background: #ffffff;}
+#header.on .trg span:nth-child(1) {transform: rotate(-45deg) translateY(20px);}
+#header.on .trg span:nth-child(2) {opacity: 0; visibility: hidden;}
+#header.on .trg span:nth-child(3) {transform: rotate(45deg) translateY(-20px);}
+#header.on .trg:after {transform: scale(100); opacity: 1;}
+
+#header.on #gnb {transform: translate(-50%, -50%); opacity: 1; visibility: visible;}
