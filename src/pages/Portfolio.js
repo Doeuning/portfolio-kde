@@ -11,7 +11,7 @@ class Portfolio extends Component {
     }
 
     getData = async () => {
-        const item = await axios.get('data/Data.json');
+        const item = data;
         console.log(item)
     }
 

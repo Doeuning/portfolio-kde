@@ -9,7 +9,23 @@
             "period": ""
         },
         {
-            "id": 1,
+            "id": 2,
+            "title": "Yo Toyota! Customer App",
+            "img": "thumb01.jpg",
+            "description": "",
+            "skills": "HTML5, CSS3, javascript",
+            "period": ""
+        },
+        {
+            "id": 3,
+            "title": "Yo Toyota! Customer App",
+            "img": "thumb01.jpg",
+            "description": "",
+            "skills": "HTML5, CSS3, javascript",
+            "period": ""
+        },
+        {
+            "id": 4,
             "title": "Yo Toyota! Customer App",
             "img": "thumb01.jpg",
             "description": "",
