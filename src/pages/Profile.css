@@ -1,0 +1,43 @@
+@charset "utf-8";
+
+#profile {position: relative; overflow: hidden; width: 100%; height: 100%; padding: 50px 100px 50px 200px;}
+#profile > ul {box-shadow: 10px 17px 35px 0px rgba(156, 138, 138, 0.2); padding: 100px; padding: 5.2vw; background: #fff;}
+#profile > ul > li {margin: 70px 0 0;}
+#profile > ul > li:first-child {margin: 0;}
+
+.hgroup {margin: 0 0 20px;}
+.hgroup .tit {font-weight: 300; font-size: 50px; color: #000;}
+.hgroup .tit sub {font-size: 30px; vertical-align: baseline;}
+
+.content {border-top: 2px solid #000;}
+.content ul {display: table; border-bottom: 1px solid #777; width: 100%; table-layout: fixed;}
+.content ul li {display: table-cell; padding: 20px 0; font-size: 18px; vertical-align: top; color: #000; vertical-align: top;}
+.content ul li:nth-child(1) {width: 40%;}
+.content ul li:nth-child(2) {width: 60%;}
+.content ul li em {display: inline-block; font-weight: 700; font-size: 24px;}
+.content ul li .position {display: inline-block; position: relative; margin: 0 0 0 30px; vertical-align: sub;}
+.content ul li .position:before {display: block; content: ''; position: absolute; top: 50%; left: -15px; width: 1px; height: 20px; margin: -10px 0 0; background: #717171;}
+.content ul li .task {margin: 10px 0 0; word-break: keep-all;}
+
+.content.v2 ul li:nth-child(1) {width: 28%;}
+.content.v2 ul li:nth-child(2) {width: 72%;}
+
+#profile .btn-go {position: fixed; right: 50px; bottom: 20px;}
+
+@media (max-width: 1080px) {
+    #profile {padding: 50px 50px 540px 50px; padding: 4.6296vw 4.6296vw 50vw 4.6296vw;}
+    #profile > ul {padding: 50px; padding: 4.6296vw;}
+    .content ul {display: block;}
+    .content ul li {display: block;}
+    .content ul li:nth-child(1) {width: 100%; background: #f4f4f4; text-align: center;}
+    .content ul li:nth-child(2) {width: 100%;}
+    .content ul li em {display: block; text-align: center;}
+    .content ul li .position {display: block; margin: 20px 0 0; text-align: center;}
+    .content ul li .position:before {display: block; content: ''; position: absolute; top: -10px; left: 50%; width: 20px; height: 1px; margin: 0 0 0 -10px; background: #717171;}
+    .content ul li .task {text-align: center;}
+    .content.v2 ul li:nth-child(1) {width: 100%;}
+    .content.v2 ul li:nth-child(2) {width: 100%;}
+
+    #profile .btn-go {right: auto; bottom: 100px; bottom: 9.2592vw; left: 50%; width: 700px; width: 64vw; transform: translateX(-50%);}
+    #profile .btn-go:hover {transform: translateX(-45%);}
+}

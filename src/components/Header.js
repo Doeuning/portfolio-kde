@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import 'components/Header.css';
 
 class Header extends Component {
@@ -19,10 +19,10 @@ class Header extends Component {
                     id="header"
                     className={ buttonToggle ? 'on' : null}
                 >
-                    <h1 className="title">Doeun Kim</h1>
+                    <h1 className="title"><Link to="/">Doeun Kim</Link></h1>
                     <button
                         type="button"
-                        class="trg"
+                        className="trg"
                         onClick={this.handleButton}
                     >
                         <span></span>
@@ -32,7 +32,6 @@ class Header extends Component {
                     <ul id="gnb">
                         <li><Link to="/" onClick={this.handleButton}>Home</Link></li>
                         <li><Link to="/profile" onClick={this.handleButton}>Profile</Link></li>
-                        <li><Link to="/resume" onClick={this.handleButton}>Resume</Link></li>
                         <li><Link to="/portfolio" onClick={this.handleButton}>Portfolio</Link></li>
                         <li><Link to="/contact" onClick={this.handleButton}>Contact</Link></li>
                     </ul>
