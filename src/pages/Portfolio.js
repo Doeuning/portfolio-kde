@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import { CSSTransitionGroup } from 'react-transition-group';
 import axios from 'axios';
 import Item from 'pages/Items';
 import 'pages/Portfolio.css';
-import data from 'data/Data.json';
 
 class Portfolio extends Component {
     state = {
@@ -11,8 +12,9 @@ class Portfolio extends Component {
     }
 
     getData = async () => {
-        const item = data;
-        console.log(item)
+        const { data } = await axios.get('https://codepen.io/doeuning/pen/poobXzM.js');
+        console.log(data)
+        this.setState({ items: data, isLoading: false })
     }
 
     componentDidMount() {
@@ -23,27 +25,48 @@ class Portfolio extends Component {
         const { isLoading, items } = this.state;
         return (
             <React.Fragment>
-                <article id="portfolio">
-                    {isLoading ? (
-                        <div className="loader">
-                            <span className="text">Loading...</span>
-                        </div>
-                    ) : (
-                        <ul>
-                            {items.map(items => (
-                                <Item
-                                    key={items.id}
-                                    title={items.title}
-                                    img={items.img}
-                                    description={items.description}
-                                    skills={items.skills}
-                                    period={items.period}
-                                />
-                            ))}
-                        </ul>
-                    )
-                    }
-                </article>
+                <CSSTransitionGroup
+                    transitionName="homeTransition"
+                    transitionAppear={true}
+                    transitionAppearTimeout={1000}
+                    transitionEnter={false}
+                    transitionLeave={false}
+                >
+                    <article id="portfolio">
+                        {isLoading ? (
+                            <div className="loader">
+                                <span className="text">Loading...</span>
+                            </div>
+                        ) : (
+                            <ul>
+                                {items.map(items => (
+                                    <Item
+                                        key={items.id}
+                                        title={items.title}
+                                        img={items.img}
+                                        description={items.description}
+                                        skills={items.skills}
+                                        period={items.period}
+                                        link={items.link}
+                                    />
+                                ))}
+                            </ul>
+                        )
+                        }
+                        <CSSTransitionGroup
+                            transitionName="elementTransition"
+                            transitionAppear={true}
+                            transitionAppearTimeout={1000}
+                            transitionEnter={false}
+                            transitionLeave={false}
+                        >
+                            <Link className="btn-go" to="/contact">
+                                Go to <br />
+                                the <em>CONTACT</em>
+                            </Link>
+                        </CSSTransitionGroup>
+                    </article>
+                </CSSTransitionGroup>
             </React.Fragment>
         )
     }

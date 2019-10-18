@@ -1,5 +1,16 @@
 .App {width: 100%; height: 100%;}
 
+@keyframes cd-sequence {
+    0% {
+       -webkit-transform:  translateY(-50%) translateX(-2%);
+        transform:  translateY(-50%) translateX(-2%);
+    }
+    100% {
+        -webkit-transform:  translateY(-50%) translateX(-98%);
+        transform:  translateY(-50%) translateX(-98%);
+    }
+}
+
 .container,
 .container > section,
 .container > section > .scroll-content,
@@ -12,6 +23,13 @@
 .btn-go:hover {box-shadow: none; transform: translate(10px, 0);}
 .btn-go:hover:before {transform: translate(-30px, 0);}
 .btn-go:hover:after {transform: translate(-30px, -50%) rotate(45deg);}
+
+.homeTransition-appear {opacity: 0; transform: translateY(200px); transition: all 1s; transition-timing-function: cubic-bezier(0.100, 0.560, 0.360, 0.970);}
+.elementTransition-appear {opacity: 0; transform: translateY(200px); transition: all 1s; transition-timing-function: cubic-bezier(0.100, 0.560, 0.360, 0.970);}
+.elementTransitiondelay-appear {opacity: 0; transform: translateY(200px); transition: all 1s .5s; transition-timing-function: cubic-bezier(0.100, 0.560, 0.360, 0.970);}
+.homeTransition-appear.homeTransition-appear-active {opacity: 1; transform: translateY(0);}
+.elementTransition-appear.elementTransition-appear-active {opacity: 1; transform: translateY(0);}
+.elementTransitiondelay-appear.elementTransitiondelay-appear-active {opacity: 1; transform: translateY(0);}
 
 @media (max-width: 1080px) {
     .btn-go {width: 600px; width: 55.5555vw; height: auto; padding: 80px; padding: 7.45vw; font-size: 26px;}

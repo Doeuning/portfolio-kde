@@ -1,6 +1,7 @@
 @charset "utf-8";
 
-#home {position: relative; overflow: hidden; width: 100%; height: 100%; padding: 100px;}
+#home {position: relative; box-sizing: border-box; width: 100%; height: 100%; padding: 100px;}
+#home:after {display: block; content: ''; clear: both;}
 #home .greeting {float: left; position: relative; box-sizing: border-box; box-shadow: 10px 17px 35px 0px rgba(156, 138, 138, 0.2); width: 60%; padding: 100px; padding: 5.2vw; background: #fff url(/images/favicon.png) right 50px top 50px / 30px 30px no-repeat;}
 #home .greeting:after {display: block; content: ''; position: absolute; bottom: -200px; left: -100px; z-index: -1; width: 1150px; width: 75vw; height: 750px; height: 39vw; background: #d4cbbd;}
 #home .greeting .head {font-weight: 300; font-size: 50px; font-size: 2.6vw; color: #000; text-align: left;}
@@ -23,7 +24,7 @@
     #home .greeting .head {font-size: 30px;}
     #home .greeting .body ul li {font-size: 24px;}
     #home .greeting .body .desc {font-size: 30px;}
-    #home .img {float: none; width: 100%; max-width: none; margin: -20% 0 0; text-align: right;}
+    #home .img {float: none; width: 100%; max-width: none; margin: -15% 0 0; text-align: right;}
     #home .img img {width: 50%;}
     #home .btn-go {bottom: 50px;}
 }

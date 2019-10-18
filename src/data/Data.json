@@ -1,36 +1,82 @@
-{
-    "data": [
-        {
-            "id": 1,
-            "title": "Yo Toyota! Customer App",
-            "img": "thumb01.jpg",
-            "description": "",
-            "skills": "HTML5, CSS3, javascript",
-            "period": ""
-        },
-        {
-            "id": 2,
-            "title": "Yo Toyota! Customer App",
-            "img": "thumb01.jpg",
-            "description": "",
-            "skills": "HTML5, CSS3, javascript",
-            "period": ""
-        },
-        {
-            "id": 3,
-            "title": "Yo Toyota! Customer App",
-            "img": "thumb01.jpg",
-            "description": "",
-            "skills": "HTML5, CSS3, javascript",
-            "period": ""
-        },
-        {
-            "id": 4,
-            "title": "Yo Toyota! Customer App",
-            "img": "thumb01.jpg",
-            "description": "",
-            "skills": "HTML5, CSS3, javascript",
-            "period": ""
-        }
-    ]
-}
+[
+    {
+        "title": "토요타 고객용 어플리케이션 신규 구축",
+        "img": "/images/thumb01.jpg",
+        "description": "기획 단계에서부터 아이디어 구상에 참여하며 토요타 프로젝트와 하이브리드앱 구축에 대한 이해도를 높임. 기획과 디자인의 의도를 파악하여 고객사의 만족도를 이끌어내기위한 모션 구성.",
+        "skills": "HTML5, CSS3, javascript",
+        "period": "2018.10 ~ 2019.03",
+        "link": "https://itunes.apple.com/kr/app/yo-toyota/id1456577899?mt=8"
+    },
+    {
+        "title": "GC IMED 모바일 사이트 신규 구축",
+        "img": "/images/thumb02.jpg",
+        "description": "Safari, Chrome, 삼성 인터넷, 카카오톡 웹브라우저, 샤오미 웹브라우저 등 모든 모바일기기에서 이상없이 작동하도록 퍼블리싱. 전체 200페이지 이상 되는 프로젝트를 SCSS를 이용해 빠르고 효율적으로 작업.",
+        "skills": "HTML5, SCSS, CSS3, javascript, AJAX",
+        "period": "2019.04 ~ 2019.08",
+        "link": "https://m.gcimed.com/"
+    },
+    {
+        "title": "GC밸런스 심리상담센터 웹/모바일웹 사이트 신규 구축",
+        "img": "/images/thumb03.jpg",
+        "description": "불가능에 가까운 일정이었지만 선 오픈 후 안정화 하는 방법으로 작업하여 일정 준수. 코드의 재활용성을 고려해 작성하여, 작업시간을 줄일 수 있었음.",
+        "skills": "HTML5, CSS3, javascript",
+        "period": "2018.08 ~ 2018.10",
+        "link": "http://www.gcbalancecenter.com/"
+    },
+    {
+        "title": "삼성기전 웹 사이트 신규 구축",
+        "img": "/images/thumb04.jpg",
+        "description": "",
+        "skills": "HTML5, CSS3, javascript",
+        "period": "2018.07 ~ 2018.08",
+        "link": "http://snsys.net/"
+    },
+    {
+        "title": "상상인 저축은행 웹 사이트 신규 구축",
+        "img": "/images/thumb05.jpg",
+        "description": "",
+        "skills": "HTML5, CSS3, javascript",
+        "period": "2018.04 ~ 2018.07",
+        "link": "http://www.sangsanginsb.com"
+    },
+    {
+        "title": "골프존 통합멤버십 웹 사이트 구축",
+        "img": "/images/thumb06.jpg",
+        "description": "",
+        "skills": "HTML5, CSS3, javascript",
+        "period": "2018.03 ~ 2018.04",
+        "link": "http://www.golfzonretail.com/"
+    },
+    {
+        "title": "죠스떡볶이 브랜드, 프랜차이즈 웹/모바일웹 사이트 신규 구축",
+        "img": "/images/thumb07.jpg",
+        "description": "",
+        "skills": "HTML5, CSS3, javascript",
+        "period": "2017.12 ~ 2018.02",
+        "link": "http://www.jawsfood.com/"
+    },
+    {
+        "title": "토요타 내부 직원용 칭찬시스템 웹사이트 구축",
+        "img": "/images/thumb09.jpg",
+        "description": "",
+        "skills": "HTML5, CSS3, javascript",
+        "period": "2019.08 ~ 2019.08",
+        "link": "#self"
+    },
+    {
+        "title": "헤리트 해빛온 태양광시스템 대시보드 구축",
+        "img": "/images/thumb10.jpg",
+        "description": "",
+        "skills": "HTML5, CSS3, javascript",
+        "period": "2018.05 ~ 2018.06",
+        "link": "#self"
+    },
+    {
+        "title": "코라 모바일 사이트 구축",
+        "img": "/images/thumb11.jpg",
+        "description": "",
+        "skills": "HTML5, CSS3, javascript",
+        "period": "2018.06 ~ 2018.06",
+        "link": "#self"
+    }
+]
