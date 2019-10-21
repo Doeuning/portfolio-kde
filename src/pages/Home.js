@@ -44,7 +44,7 @@ class Home extends Component {
                                 transitionEnter={false}
                                 transitionLeave={false}
                             >
-                                <img src="./images/profile.jpg" alt="Kim Doeun"/>
+                                <img src="" alt="Kim Doeun"/>
                             </CSSTransitionGroup>
                             <CSSTransitionGroup
                                 transitionName="elementTransitiondelay"
