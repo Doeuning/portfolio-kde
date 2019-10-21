@@ -38,15 +38,6 @@ class Home extends Component {
                         </div>
                         <div className="img">
                             <CSSTransitionGroup
-                                transitionName="elementTransition"
-                                transitionAppear={true}
-                                transitionAppearTimeout={1000}
-                                transitionEnter={false}
-                                transitionLeave={false}
-                            >
-                                <img src="./images/profile.jpg" alt="Kim Doeun"/>
-                            </CSSTransitionGroup>
-                            <CSSTransitionGroup
                                 transitionName="elementTransitiondelay"
                                 transitionAppear={true}
                                 transitionAppearTimeout={1500}
