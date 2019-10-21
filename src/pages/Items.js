@@ -4,7 +4,7 @@ import './Items.css';
 function Item({ title, img, description, skills, period, link }) {
     return (
         <React.Fragment>
-            {link == '#self' ? (
+            {link === '#self' ? (
                 <li className="item nolink">
                     <div className="item-img">
                         <img src={img} alt={title} />
