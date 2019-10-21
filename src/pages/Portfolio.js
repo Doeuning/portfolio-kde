@@ -13,7 +13,6 @@ class Portfolio extends Component {
 
     getData = async () => {
         const { data } = await axios.get('https://codepen.io/doeuning/pen/poobXzM.js');
-        console.log(data)
         this.setState({ items: data, isLoading: false })
     }
 
