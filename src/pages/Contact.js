@@ -15,7 +15,7 @@ class Contact extends Component {
                         transitionLeave={false}
                     >
                         <dl>
-                            <dt>연락처</dt>
+                            <dt>Contact</dt>
                             <dd>doeuning@gmail.com</dd>
                             <dd><a href="tel:01065411552">010-6541-1552</a></dd>
                         </dl>

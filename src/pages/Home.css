@@ -15,7 +15,7 @@
 #home .img {float: right; position: relative; width: 500px; max-width: 35%; height: auto; margin: 0 0 0 5%;}
 #home .img img {box-shadow: 10px 17px 35px 0px rgba(156, 138, 138, 0.2); width: 100%;}
 
-#home .btn-go {position: absolute; right: 35%; bottom: 0;}
+#home .btn-go {position: absolute; right: 35%; bottom: 10%;}
 
 @media (max-width: 1080px) {
     #home {overflow: visible; padding: 50px 50px 200px 50px; padding: 4.6vw 4.6vw 18.5185vw 4.6vw;}

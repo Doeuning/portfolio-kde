@@ -18,8 +18,7 @@ class Home extends Component {
                         <div className="greeting">
                             <p className="head">
                                 안녕하세요.<br />
-                                웹퍼블리셔<br />
-                                김도은입니다.
+                                웹퍼블리셔 김도은입니다.
                             </p>
                             <div className="body">
                                 <ul>
