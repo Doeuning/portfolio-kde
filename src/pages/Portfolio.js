@@ -61,7 +61,7 @@ class Portfolio extends Component {
                         >
                             <Link className="btn-go" to="/contact">
                                 Go to <br />
-                                the <em>CONTACT</em>
+                                <em>CONTACT</em>
                             </Link>
                         </CSSTransitionGroup>
                     </article>

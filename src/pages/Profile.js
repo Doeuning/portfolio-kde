@@ -22,7 +22,7 @@ class Profile extends Component {
                                 </div>
                                 <div className="content">
                                     <ul>
-                                        <li>2017. 11 ~ 재직중 (2년)</li>
+                                        <li>2017. 11 ~ 2019. 11 (2년)</li>
                                         <li>
                                             <em>뉴리버</em>
                                             <span className="position">개발팀 사원</span>
@@ -79,7 +79,7 @@ class Profile extends Component {
                         >
                             <Link className="btn-go" to="/portfolio">
                                 Go to <br />
-                                the <em>PORTFOLIO</em>
+                                <em>PORTFOLIO</em>
                             </Link>
                         </CSSTransitionGroup>
                     </article>

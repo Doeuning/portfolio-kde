@@ -18,7 +18,7 @@ class Home extends Component {
                         <div className="greeting">
                             <p className="head">
                                 안녕하세요.<br />
-                                프론트엔드 개발자<br />
+                                웹퍼블리셔<br />
                                 김도은입니다.
                             </p>
                             <div className="body">
@@ -26,13 +26,13 @@ class Home extends Component {
                                     <li>HTML5</li>
                                     <li>CSS3</li>
                                     <li>javascript</li>
-                                    <li>React</li>
+                                    <li>jQuery</li>
                                     <li>Photoshop</li>
                                     <li>Illustrator</li>
                                 </ul>
                                 <p className="desc">
                                     등을 다루는<br />
-                                    감각있는 개발자입니다.
+                                    감각있는 웹퍼블리셔입니다.
                                 </p>
                             </div>
                         </div>
@@ -55,7 +55,7 @@ class Home extends Component {
                             >
                                 <Link className="btn-go" to="/profile">
                                     Go to <br />
-                                    the <em>PROFILE</em>
+                                    <em>PROFILE</em>
                                 </Link>
                             </CSSTransitionGroup>
                         </div>
